@@ -77,12 +77,12 @@ function SmoothEffect({
   alwaysVisibleCount: number;
 }) {
   return (
-    <div className="flex lg:flex-nowrap md:flex-wrap whitespace-pre">
+    <div className="flex  whitespace-pre md:flex-nowrap flex-wrap  w-72 md:w-full">
       {words.map((word, wordIndex) => {
         return (
           <span
             key={wordIndex}
-            className={cn("transition-opacity duration-300 ease-in-out", {
+            className={cn("transition-opacity duration-300 ease-in-out ", {
               "opacity-100": wordIndex < index,
               "opacity-0": wordIndex >= index + alwaysVisibleCount,
             })}
