@@ -3,13 +3,12 @@ import { ArrowBigRight } from "lucide-react";
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import TypingText from "./ui/TypingTextEffect";
 import { Navigation } from "lucide-react";
 import { Download } from "lucide-react";
 import { HeroHighlight } from "./ui/HeroHighlight";
 const Hero = () => {
   return (
-    <HeroHighlight className="pb-20 pt-36  max-w-7xl w-full">
+    <div className="pb-20 pt-36  max-w-7xl w-full">
       {/**
        *  UI: grid
        *  change bg color to bg-black-100 and reduce grid color from
@@ -17,7 +16,7 @@ const Hero = () => {
        */}
       <div>
         <Spotlight
-          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
+          className="-top-20 -left-10 md:-left-32 md:-top-20"
           fill="#ffffff"
         />
         <Spotlight
@@ -26,7 +25,7 @@ const Hero = () => {
         />
         <Spotlight className="left-80 top-28 h-[80vh] w-[70vw]" fill="blue" />
       </div>
-      <div className="flex justify-center relative my-36 z-10">
+      <div className="flex justify-center relative my-44 z-10">
         <div className=" flex flex-col items-center justify-center">
           {/**
            *  Link: https://ui.aceternity.com/components/text-generate-effect
@@ -52,12 +51,12 @@ const Hero = () => {
               />
             </div>
             <div className="w-full md:w-60 rounded-lg text-white text-center ">
-              <button className="bg-gradient-to-r from-indigo-500 to-blue-500  h-12 w-full rounded-lg">
+              <button className="bg-gradient-to-r from-indigo-500 to-blue-500  h-12 w-full rounded-sm">
                 <span className="" />
 
                 {/* remove px-3 py-1, add px-5 gap-2 */}
                 <span
-                  className={`inline-flex cursor-pointer items-center justify-center rounded-lg
+                  className={`inline-flex cursor-pointer items-center justify-center
               px-7 text-sm font-medium text-white  gap-2`}
                 >
                   Resume
@@ -68,27 +67,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <div className="relative flex overflow-x-hidden text-white">
-        <div className="py-12 animate-marquee whitespace-nowrap">
-          <span className="text-4xl mx-4">Marquee Item 1</span>
-          <span className="text-4xl mx-4">Marquee Item 2</span>
-          <span className="text-4xl mx-4">Marquee Item 3</span>
-          <span className="text-4xl mx-4">Marquee Item 4</span>
-          <span className="text-4xl mx-4">Marquee Item 5</span>
-        </div>
-
-        <div className="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
-          <span className="text-4xl mx-4">Marquee Item 1</span>
-          <span className="text-4xl mx-4">Marquee Item 2</span>
-          <span className="text-4xl mx-4">Marquee Item 3</span>
-          <span className="text-4xl mx-4">Marquee Item 4</span>
-          <span className="text-4xl mx-4">Marquee Item 5</span>
-        </div>
-      </div>
-    </HeroHighlight>
+    </div>
   );
 };
 
