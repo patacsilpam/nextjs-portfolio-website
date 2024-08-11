@@ -4,17 +4,19 @@ import { BentoGrid, BentoGridItem } from "@/components/ui/BentoGrid";
 
 export default function BentoGridSecondDemo() {
   return (
-    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] ">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          id={item.id}
-          description={item.description}
-          className={item.className}
-          image={item.image}
-        />
-      ))}
-    </BentoGrid>
+    <div id="about">
+      <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+        {items.map((item, i) => (
+          <BentoGridItem
+            key={i}
+            id={item.id}
+            description={item.description}
+            className={item.className}
+            image={item.image}
+          />
+        ))}
+      </BentoGrid>
+    </div>
   );
 }
 const Skeleton = () => (
@@ -27,7 +29,7 @@ const items = [
     description:
       "I'm passionate about coding and enjoy building user-friendly mobile apps and websites. I love turning ideas into functional and accessible digital experiences that make a difference.",
     header: <Skeleton />,
-    className: "md:col-span-2",
+    className: "md:col-span-2 ",
     image: "./workstation.webp",
   },
   {
@@ -35,7 +37,7 @@ const items = [
     title: "The Digital Revolution",
     description: "I constantly try to improve My tech stack",
     header: <Skeleton />,
-    className: "md:col-span-1",
+    className: "md:col-span-1 bg-white",
     image: "./workstation.webp",
   },
   {
