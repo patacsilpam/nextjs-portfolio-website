@@ -16,7 +16,7 @@ const Hero = () => {
        */}
       <div>
         <Spotlight
-          className="-top-20 -left-10 md:-left-32 md:-top-20"
+          className="-top-20 -left-10 md:-left-32 md:-top-20 h-screen"
           fill="#ffffff"
         />
         <Spotlight
