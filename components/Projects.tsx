@@ -6,7 +6,7 @@ export default function CardHoverEffectDemo() {
     <div className="max-w-5xl mx-auto px-8">
       <div className="mt-44 text-center">
         <h1 className="text-white text-5xl font-bold">
-          A small of recent projects
+          A small of <span className="text-purple-400">recent projects</span>
         </h1>
       </div>
       <HoverEffect items={projects} />
