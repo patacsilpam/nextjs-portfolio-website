@@ -88,3 +88,39 @@ export const tools = [
     ],
   },
 ];
+
+export const experienceList = [
+  {
+    id:1,
+    title:"Freelance Front-End Developer",
+    employer:"",
+    description:"",
+    year:"2022"
+  },
+  {
+    id:2,
+    title:"Co-founder",
+    employer: "Martinsoft",
+    description:"",
+    year: "2022"
+  },
+  {
+    id:3,
+    title:"AI Prompt Engineer Intern",
+    employer: "Makerspace Innovhub",
+    description:"",
+    year:"March 2023 - June 2023"
+  },
+  {
+    id:4,
+    title:"Graduation",
+    employer: "Urdaneta City University",
+    description:"August 2023"
+  },
+  {
+    id:5,
+    title:"Web Developer",
+    employer: "National Commission on Indigenous Peoples Region 1",
+    description:"November 2023 - August 2024"
+  }
+]
