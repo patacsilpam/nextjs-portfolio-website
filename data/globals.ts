@@ -1,3 +1,4 @@
+import { Linkedin, Github, Mail } from "lucide-react";
 export const navItems = [
   {
     id: 1,
@@ -125,4 +126,11 @@ export const experienceList = [
     description: "",
     year: "Oct. 2022",
   },
+];
+
+export const socialList = [
+  { id: 1, title: "LinkedIn", icon: Linkedin },
+  { id: 2, title: "Github", icon: Github },
+
+  { id: 3, title: "Mail", icon: Mail },
 ];
