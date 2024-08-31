@@ -8,7 +8,7 @@ import { Download } from "lucide-react";
 import { HeroHighlight } from "./ui/HeroHighlight";
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36  max-w-7xl w-full">
+    <div className="">
       <div>
         {/**
          * <Spotlight
@@ -21,13 +21,14 @@ const Hero = () => {
         /> <hr className="-mt-9 border-[15px] border-[#0525c8d6] animate-expand" />
         <Spotlight className="left-80 top-28 h-[80vh] w-[70vw]" fill="blue" /> */}
       </div>
-      <div className="flex flex-row my-36">
-        <div className="flex flex-col items-center  w-fit">
-          <div className="md:w-[50vw] w-full">
+      <div className="flex flex-row justify-center items-center my-28">
+        <div className="flex flex-col justify-center items-center">
+          <div className="w-2/3">
+            {" "}
             <TextGenerateEffect
-              words={`I'm Pam 👋, a junior developer shaping digital solutions that inspire.`}
+              words={`I'm Pam 👋, a junior developer turning ideas into interactive experiences.`}
             />
-            <div className="-mt-4 h-7 bg-gradient-to-r from-[#0525c8d6] to-[#041d995f] animate-expand" />
+            <div className="-mt-4  h-7 bg-gradient-to-r from-[#0525c8d6] to-[#041d995f] animate-expand" />
             <div className="w-fit  mt-5">
               <span className="text-neutral-200">
                 Specializing in creating efficient, user-friendly mobile and web
