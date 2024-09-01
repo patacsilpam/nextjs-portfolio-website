@@ -1,5 +1,5 @@
 "use client";
-import { ArrowBigRight } from "lucide-react";
+import { ArrowDown, ArrowBigRight } from "lucide-react";
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
@@ -9,33 +9,29 @@ import { HeroHighlight } from "./ui/HeroHighlight";
 const Hero = () => {
   return (
     <div className="">
-      <div>
-        {/**
-         * <Spotlight
-          className="left-80 top-28 h-[80vh] w-[60vw]"
-          fill="#ffffff"
-        />
-        <Spotlight
-          className="h-[80vh] w-[50vw] top-10 left-full"
-          fill="purple"
-        /> <hr className="-mt-9 border-[15px] border-[#0525c8d6] animate-expand" />
-        <Spotlight className="left-80 top-28 h-[80vh] w-[70vw]" fill="blue" /> */}
-      </div>
-      <div className="flex flex-row justify-center items-center my-28">
+      <div></div>
+      <div className="flex flex-row justify-center items-center my-56">
         <div className="flex flex-col justify-center items-center">
-          <div className="w-2/3">
+          <div className="max-w-3xl w-full text-center">
             {" "}
             <TextGenerateEffect
-              words={`I'm Pam 👋, a junior developer turning ideas into interactive experiences.`}
+              words={`I'm Pam 👋, a software developer who turns ideas into interactive experience.`}
             />
-            <div className="-mt-4  h-7 bg-gradient-to-r from-[#0525c8d6] to-[#041d995f] animate-expand" />
+            {/* <div className="-mt-4  h-3 bg-gradient-to-r from-[#0525c8d6] to-[#041d995f] animate-expand" />*/}
             <div className="w-fit  mt-5">
-              <span className="text-neutral-200">
-                Specializing in creating efficient, user-friendly mobile and web
-                applications.
-              </span>
+              <p className="text-neutral-200 transition ease-in-out  duration-75 delay-150 text-lg">
+                With a focus on user-centered design, I leverage my coding and
+                design expertise to create exceptional digital experiences.
+                Committed to delivering innovative solutions that engage and
+                delight users.
+              </p>
             </div>
-            <div className="flex md:flex-row flex-col gap-3 mt-5">
+            <div className="grid place-items-center mt-[32px]">
+              <strong className="text-neutral-200 border border-1 rounded-full p-2 bg-[#e3e2e80d]">
+                <ArrowDown size={28} />
+              </strong>
+            </div>
+            {/**<div className="flex md:flex-row flex-col gap-3 mt-5">
               <button className="bg-[#0527c8] h-12 w-[250px] md:w-60  text-white ">
                 <span
                   className={`inline-flex cursor-pointer items-center justify-center
@@ -51,7 +47,7 @@ const Hero = () => {
                 position="right"
                 otherClasses="w-[96]"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
