@@ -11,6 +11,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      textUnderlineOffset: {
+        10: "20px",
+      },
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],
       },
