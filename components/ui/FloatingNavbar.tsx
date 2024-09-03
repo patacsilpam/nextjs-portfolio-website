@@ -56,14 +56,15 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex flex-row justify-between items-center  h-[90px] px-4  fixed  inset-x-0 mx-auto  rounded-full dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000]  ",
+          "flex flex-row justify-between items-center  h-[90px] px-4  fixed  inset-x-0 mx-auto  rounded-full  bg-white  z-[5000]  ",
           className
         )}
         style={{
           backdropFilter: "blur(20px) saturate(240%)",
-          backgroundColor: "rgba(17, 25, 40, 0.20)",
+          backgroundColor: "#f7f7f7",
           borderRadius: "2px",
           //border: "1px solid rgba(255, 255, 255, 0.125)",
+          //shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
         }}
       >
         {" "}
