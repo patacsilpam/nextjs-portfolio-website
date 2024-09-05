@@ -15,7 +15,7 @@ const config: Config = {
         10: "20px",
       },
       fontFamily: {
-        lexend: ["Lexend", "sans-serif"],
+        openSans: ["Open Sans", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
