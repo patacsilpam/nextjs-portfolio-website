@@ -70,9 +70,12 @@ export const FloatingNav = ({
         {" "}
         {/**border border-transparent dark:border-white/[0.2] */}
         <div className="mx-10 ">
-          <div className="flex flex-row gap-x-10 ">
-            <span className="text-xl font-medium text-neutral-300 ">
+          <div className="flex flex-col gap-x-10 ">
+            <span className="text-xl font-semibold text-[#0F0F12]">
               Pam Patacsil
+            </span>
+            <span className="font-openSans text-sm text-[#1D1E20]">
+              Developer
             </span>
           </div>
         </div>
@@ -82,12 +85,12 @@ export const FloatingNav = ({
               key={`link=${idx}`}
               href={navItem.link}
               className={cn(
-                "relative  text-[#ececefe6]  font-medium  items-center flex  dark:hover:text-neutral-300 hover:text-neutral-500"
+                "relative  flex items-center "
               )}
             >
               <span className="block sm:hidden">{navItem.icon}</span>
               <span>
-                <p className="hidden sm:block text-sm   text-neutral-400">
+                <p className="hidden sm:block mx-5 text-sm  text-[#0F0F12] font-openSans">
                   {navItem.name}
                 </p>
               </span>
@@ -98,7 +101,7 @@ export const FloatingNav = ({
           {socialList.map((item, id) => (
             <span
               key={id}
-              className=" text-neutral-400 border-neutral-600 p-2 rounded-lg"
+              className="mx-3 text-sm  text-[#0F0F12] font-openSans"
             >
               <p>{item.title}</p>
             </span>
