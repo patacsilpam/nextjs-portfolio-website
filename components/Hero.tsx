@@ -12,15 +12,15 @@ const Hero = () => {
       <div></div>
       <div className="flex flex-row justify-center items-center my-44">
         <div className="flex flex-col justify-center items-center">
-          <div className="max-w-3xl w-full text-center">
+          <div className="max-w-4xl w-full md:text-center px-[3rem] ">
             {" "}
             <TextGenerateEffect
               words={`I'm Pam 👋, a software developer who turns ideas into interactive experience.`}
-              className="text-[#1d1e20]"
+              className="text-[#1d1e20] font-openSans font-semibold md:max-w-3xl w-full"
             />
             {/* <div className="-mt-4  h-3 bg-gradient-to-r from-[#0525c8d6] to-[#041d995f] animate-expand" />*/}
             <div className="mt-5 transition ease-in-out  duration-75 delay-150">
-              <p className="  text-xl font-light text-[#46474e]">
+              <p className="text-md font-light text-[#46474e]">
                 With a focus on user-centered design, I leverage my coding and
                 design expertise to create exceptional digital experiences.
                 Committed to delivering innovative solutions that engage and
