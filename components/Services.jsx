@@ -24,7 +24,7 @@ const Services = () => {
             <span>{<service.icon />}</span>
             <p className="text-2xl mt-8 mb-3 ">{service.title}</p>
             <hr />
-            <p className="text-sm font-light mt-12 text-[#e3e2e2]">
+            <p className="text-sm font-light mt-8 text-[#e3e2e2]">
               {service.description}
             </p>
           </div>
