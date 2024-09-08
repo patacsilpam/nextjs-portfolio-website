@@ -1,4 +1,12 @@
-import { Linkedin, Github, Mail } from "lucide-react";
+import {
+  Linkedin,
+  Github,
+  Mail,
+  Terminal,
+  PenTool,
+  BotMessageSquare,
+} from "lucide-react";
+
 export const navItems = [
   {
     id: 1,
@@ -14,6 +22,30 @@ export const navItems = [
     id: 3,
     name: "Experience",
     link: "#experience",
+  },
+];
+
+export const services = [
+  {
+    id: 1,
+    icon: Terminal,
+    title: "Web/Mobile Development",
+    description:
+      "I provide personalized web and mobile development services tailored to your unique needs, from custom e-commerce platforms to specialized front-end and back-end solutions. ",
+  },
+  {
+    id: 2,
+    icon: PenTool,
+    title: "UX/UI Design",
+    description:
+      "I create intuitive, engaging interfaces that prioritize user experience. Every design choice is made with your audience in mind, ensuring that your products are not just visually appealing but also easy to navigate. ",
+  },
+  {
+    id: 3,
+    icon: BotMessageSquare,
+    title: "AI Prompt Engineering",
+    description:
+      "Leverage the power of AI with custom prompt engineering designed specifically for your needs. I tailor prompts to ensure that AI-generated content fits your brand voice and objectives, enhancing your content creation and operational efficiency.",
   },
 ];
 
