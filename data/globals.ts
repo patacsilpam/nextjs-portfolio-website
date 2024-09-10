@@ -49,6 +49,58 @@ export const services = [
   },
 ];
 
+export const techList = [
+  {
+    title:"JavaScript",
+    icon:"/images/techstack/javascript.png"
+  },
+  {
+    title:"TypeScript",
+    icon:"/images/techstack/typescript.png"
+  },
+  {
+    title:"TailwindCSS",
+    icon:"/images/techstack/tailwindcss.png",
+  },
+  {
+    title:"Bootstrap",
+    icon:"/images/techstack/bootstrap.png"
+  },
+  {
+    title:"Reactjs",
+    icon:"/images/techstack/reactjs.png"
+  },
+  {
+    title:"Nextjs",
+    icon:"/images/techstack/nextjs.png"
+  },
+  {
+    title:"NodeJS",
+    icon:"/images/techstack/nodejs.png"
+  },
+  {
+    title:"PHP",
+    icon:"/images/techstack/php.png"
+  },
+  {
+    title:"Java",
+    icon:"/images/techstack/java.png"
+  },
+  {
+    title:"SQL",
+    icon:"/images/techstack/sql.png"
+  },
+  {
+    title:"Supabase",
+    icon:"/images/techstack/supabase.png"
+  },
+  {
+    title:"Flutter",
+    icon:"/images/techstack/flutter.png"
+  },
+]
+
+
 export const projects = [
   {
     title: "Stripe",
