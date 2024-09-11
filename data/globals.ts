@@ -67,20 +67,21 @@ export const techList = [
     icon:"/images/techstack/bootstrap.png"
   },
   {
-    title:"Reactjs",
-    icon:"/images/techstack/reactjs.png"
-  },
-  {
     title:"Nextjs",
     icon:"/images/techstack/nextjs.png"
   },
   {
-    title:"NodeJS",
-    icon:"/images/techstack/nodejs.png"
+    title:"Reactjs",
+    icon:"/images/techstack/reactjs.png"
   },
   {
-    title:"PHP",
-    icon:"/images/techstack/php.png"
+    title:"Laravel",
+    icon:"/images/techstack/laravel.png"
+  },
+  
+  {
+    title:"Inertia",
+    icon:"/images/techstack/inertia.png"
   },
   {
     title:"Java",
@@ -91,12 +92,12 @@ export const techList = [
     icon:"/images/techstack/sql.png"
   },
   {
-    title:"Supabase",
-    icon:"/images/techstack/supabase.png"
-  },
-  {
     title:"Flutter",
     icon:"/images/techstack/flutter.png"
+  },
+  {
+    title:"WordPress",
+    icon:"/images/techstack/wordpress.png"
   },
 ]
 
