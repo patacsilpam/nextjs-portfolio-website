@@ -8,8 +8,7 @@ import { Download } from "lucide-react";
 import { HeroHighlight } from "./ui/HeroHighlight";
 const Hero = () => {
   return (
-    <div className="">
-      <div></div>
+    <div className="min-h-[450px] h-full">
       <div className="flex flex-row justify-center items-center my-44">
         <div className="flex flex-col justify-center items-center">
           <div className="max-w-4xl w-full md:text-center px-[3rem] ">
