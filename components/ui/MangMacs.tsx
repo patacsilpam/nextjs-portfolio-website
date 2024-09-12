@@ -9,7 +9,7 @@ const LandingPage = () => {
           
         </div>
         <div className="">
-          <img src="/images/projects/mangmacs-admin-1.png" alt="" className="-rotate-12 -ml-2 h-[300px] w-[850px] scale-110 shadow-md"/>
+          <img src="/images/projects/mangmacs-admin-1.png" alt="" className="-rotate-12 -ml-2 h-[300px] w-[850px] scale-110 shadow-md" />
         </div>
     </div>
   )
