@@ -1,5 +1,6 @@
 "use client";
 import Covid19 from "./ui/Covid19";
+import EckoPhotography from "./ui/EckoPhotography";
 import LandingPage from "./ui/LandingPage";
 import MangMacs from "./ui/MangMacs";
 import MobileApp from "./ui/MobileApp";
@@ -14,6 +15,7 @@ export default function Projects() {
         <Covid19/>
         <MangMacs/>
         <TravelOrder/>
+        <EckoPhotography/>
       </div>
     </div>
   );
