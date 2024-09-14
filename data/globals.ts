@@ -51,56 +51,55 @@ export const services = [
 
 export const techList = [
   {
-    title:"JavaScript",
-    icon:"/images/techstack/javascript.png"
+    title: "JavaScript",
+    icon: "/images/techstack/javascript.png",
   },
   {
-    title:"TypeScript",
-    icon:"/images/techstack/typescript.png"
+    title: "TypeScript",
+    icon: "/images/techstack/typescript.png",
   },
   {
-    title:"TailwindCSS",
-    icon:"/images/techstack/tailwindcss.png",
+    title: "TailwindCSS",
+    icon: "/images/techstack/tailwindcss.png",
   },
   {
-    title:"Bootstrap",
-    icon:"/images/techstack/bootstrap.png"
+    title: "Bootstrap",
+    icon: "/images/techstack/bootstrap.png",
   },
   {
-    title:"Nextjs",
-    icon:"/images/techstack/nextjs.png"
+    title: "Nextjs",
+    icon: "/images/techstack/nextjs.png",
   },
   {
-    title:"Reactjs",
-    icon:"/images/techstack/reactjs.png"
+    title: "Reactjs",
+    icon: "/images/techstack/reactjs.png",
   },
   {
-    title:"Laravel",
-    icon:"/images/techstack/laravel.png"
+    title: "Laravel",
+    icon: "/images/techstack/laravel.png",
   },
-  
-  {
-    title:"Inertia",
-    icon:"/images/techstack/inertia.png"
-  },
-  {
-    title:"Java",
-    icon:"/images/techstack/java.png"
-  },
-  {
-    title:"SQL",
-    icon:"/images/techstack/sql.png"
-  },
-  {
-    title:"Flutter",
-    icon:"/images/techstack/flutter.png"
-  },
-  {
-    title:"WordPress",
-    icon:"/images/techstack/wordpress.png"
-  },
-]
 
+  {
+    title: "Inertia",
+    icon: "/images/techstack/inertia.png",
+  },
+  {
+    title: "Java",
+    icon: "/images/techstack/java.png",
+  },
+  {
+    title: "SQL",
+    icon: "/images/techstack/sql.png",
+  },
+  {
+    title: "Flutter",
+    icon: "/images/techstack/flutter.png",
+  },
+  {
+    title: "WordPress",
+    icon: "/images/techstack/wordpress.png",
+  },
+];
 
 export const projects = [
   {
@@ -214,8 +213,12 @@ export const experienceList = [
 ];
 
 export const socialList = [
-  { id: 1, title: "LinkedIn", icon: Linkedin },
-  { id: 2, title: "Github", icon: Github },
+  {
+    title: "LinkedIn",
+    icon: Linkedin,
+    link: "https://www.linkedin.com/in/pamelapatacsil/",
+  },
+  { title: "Github", icon: Github, link: "https://github.com/patacsilpam" },
 
-  { id: 3, title: "Mail", icon: Mail },
+  { title: "Mail", icon: Mail, link: "mailto:pamelampatacsil@gmail.com" },
 ];
