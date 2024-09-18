@@ -1,17 +1,19 @@
 import { Send } from "lucide-react";
+import Footer from "./Footer";
 
 const Contact = () => {
   return (
-    <div className="relative min-h-[600px] h-full flex flex-col justify-center items-center space-y-5  ">
+    <div className="relative min-h-[600px] h-full flex flex-col justify-center items-center space-y-5  z-20">
+      {/*
       <img
-        className="absolute bg-[url('/wavelines.png')] bg-no-repeat bg-cover h-fit opacity-30 overflow-hidden inset-0 "
+        className="absolute top-0 bg-no-repeat bg-cover  opacity-30 overflow-hidden inset-0 -z-1 "
         src="/wavelines.png"
-      />
+      /> */}
       <div className="z-20 grid place-items-center gap-y-2">
-        <p className="text-5xl max-w-4xl text-center font-light">
+        <p className="md:text-5xl text-2xl max-w-4xl text-center font-light">
           Let's work on something that leads to remarkable success.
         </p>
-        <p className="text-lg font-light shadow-inherit">
+        <p className="md:text-lg sm:text-md font-light shadow-inherit px-7">
           Together, we'll turn your vision into a thriving reality and drive
           impactful results.
         </p>
