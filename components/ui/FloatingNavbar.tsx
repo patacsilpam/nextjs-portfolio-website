@@ -97,16 +97,18 @@ export const FloatingNav = ({
             </Link>
           ))}
         </div>
-        <div className="flex  mb-2">
-          {socialList.map((item, id) => (
-            <span
-              key={id}
-              className="mx-3 text-sm  text-[#0F0F12] font-openSans"
-            >
-              <p>{item.title}</p>
-            </span>
-          ))}
-        </div>
+        <div className="flex flex-row gap-5 ">
+        {socialList.map((item, key) => (
+          <a
+            key={key}
+            href="https://github.com/patacsilpam/nextjs-portfolio-website/blob/main/components/Footer.tsx"
+            className="cursor-pointer "
+            target="_blank"
+          >
+            <p className=" text-sm font-openSans">{item.title}</p>
+          </a>
+        ))}
+      </div>
       </motion.div>
     </AnimatePresence>
   );
