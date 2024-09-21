@@ -26,7 +26,7 @@ const config: Config = {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         marquee: "marquee 25s linear infinite",
         marquee2: "marquee2 25s linear infinite",
-        expand: "expand 3s ease-in-out forwards",
+        'expand-height': "expandHeight 0.10s ease-in-out forwards",
       },
 
       keyframes: {
@@ -40,9 +40,10 @@ const config: Config = {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
-        expand: {
-          "0%": { width: "0%" },
-          "100%": { width: "100%" },
+        expandHeight: {
+          "0%": { height: "0px" },
+          "50%": { height: "50px" },
+          "100%": { height: "200px" },
         },
         marquee: {
           "0%": { transform: "translateX(0%)" },
