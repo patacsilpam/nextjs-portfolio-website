@@ -3,7 +3,10 @@ import Footer from "./Footer";
 
 const Contact = () => {
   return (
-    <div className="relative min-h-[600px] h-full flex flex-col justify-center items-center space-y-5  z-20">
+    <div
+      id="contact"
+      className="relative min-h-[600px] h-full flex flex-col justify-center items-center space-y-5  z-20"
+    >
       {/*
       <img
         className="absolute top-0 bg-no-repeat bg-cover  opacity-30 overflow-hidden inset-0 -z-1 "
