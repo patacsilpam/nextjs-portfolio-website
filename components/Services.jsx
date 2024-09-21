@@ -2,7 +2,10 @@ import React from "react";
 import { services } from "@/data/globals";
 const Services = () => {
   return (
-    <div className="bg-[#000000] flex flex-col justify-center items-center  w-screen min-h-[768px] md:p-20 p-10 gap-10">
+    <div
+      id="about"
+      className="bg-[#000000] flex flex-col justify-center items-center  w-screen min-h-[768px] md:p-20 p-10 gap-10"
+    >
       <div className="text-white text-center md:space-y-5 space-y-1">
         <h1 className="md:text-5xl text-2xl  font-light">
           Envision. Craft. Engage
