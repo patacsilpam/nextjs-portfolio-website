@@ -16,7 +16,7 @@ const Footer = () => {
         {socialList.map((item, key) => (
           <a
             key={key}
-            href="https://github.com/patacsilpam/nextjs-portfolio-website/blob/main/components/Footer.tsx"
+            href={item.link}
             className="cursor-pointer "
             target="_blank"
           >
