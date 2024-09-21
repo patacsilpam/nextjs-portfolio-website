@@ -20,8 +20,8 @@ export const navItems = [
   },
   {
     id: 3,
-    name: "Experience",
-    link: "#experience",
+    name: "Contact",
+    link: "#contact",
   },
 ];
 
@@ -51,55 +51,55 @@ export const services = [
 
 export const techList = [
   {
-    title:"JavaScript",
-    icon:"/images/techstack/javascript.png"
+    title: "JavaScript",
+    icon: "/images/techstack/javascript.png",
   },
   {
-    title:"TypeScript",
-    icon:"/images/techstack/typescript.png"
+    title: "TypeScript",
+    icon: "/images/techstack/typescript.png",
   },
   {
-    title:"TailwindCSS",
-    icon:"/images/techstack/tailwindcss.png",
+    title: "TailwindCSS",
+    icon: "/images/techstack/tailwindcss.png",
   },
   {
-    title:"Bootstrap",
-    icon:"/images/techstack/bootstrap.png"
+    title: "Bootstrap",
+    icon: "/images/techstack/bootstrap.png",
   },
   {
-    title:"Nextjs",
-    icon:"/images/techstack/nextjs.png"
+    title: "Nextjs",
+    icon: "/images/techstack/nextjs.png",
   },
   {
-    title:"Reactjs",
-    icon:"/images/techstack/reactjs.png"
+    title: "Reactjs",
+    icon: "/images/techstack/reactjs.png",
   },
   {
-    title:"Laravel",
-    icon:"/images/techstack/laravel.png"
+    title: "Laravel",
+    icon: "/images/techstack/laravel.png",
   },
-  
+
   {
-    title:"Inertia",
-    icon:"/images/techstack/inertia.png"
-  },
-  {
-    title:"Java",
-    icon:"/images/techstack/java.png"
+    title: "Inertia",
+    icon: "/images/techstack/inertia.png",
   },
   {
-    title:"SQL",
-    icon:"/images/techstack/sql.png"
+    title: "Java",
+    icon: "/images/techstack/java.png",
   },
   {
-    title:"Flutter",
-    icon:"/images/techstack/flutter.png"
+    title: "SQL",
+    icon: "/images/techstack/sql.png",
   },
   {
-    title:"WordPress",
-    icon:"/images/techstack/wordpress.png"
+    title: "Flutter",
+    icon: "/images/techstack/flutter.png",
   },
-]
+  {
+    title: "WordPress",
+    icon: "/images/techstack/wordpress.png",
+  },
+];
 
 export const tools = [
   {
