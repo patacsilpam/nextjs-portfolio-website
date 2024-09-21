@@ -9,6 +9,7 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { socialList } from "@/data/globals";
+import { Menu } from "lucide-react";
 export const FloatingNav = ({
   navItems,
   className,
@@ -23,7 +24,10 @@ export const FloatingNav = ({
   const { scrollYProgress } = useScroll();
 
   const [visible, setVisible] = useState(true);
-
+  const [isOpen,setOpen] = useState(false)
+  const toggleMenu = () =>{
+    setOpen(!isOpen);
+  }
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
     if (typeof current === "number") {
@@ -56,21 +60,17 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex flex-row justify-between items-center  h-[90px] px-4  fixed  inset-x-0 mx-auto  rounded-full  bg-white  z-[5000]  ",
+          "flex flex-row justify-between items-center  h-[90px]  fixed  inset-x-0 mx-auto  rounded-full  bg-white  z-[5000]  ",
           className
         )}
         style={{
           backdropFilter: "blur(20px) saturate(240%)",
           backgroundColor: "#f7f7f7",
-          borderRadius: "2px",
-          //border: "1px solid rgba(255, 255, 255, 0.125)",
-          //shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
+          borderRadius: "2px"
         }}
       >
-        {" "}
-        {/**border border-transparent dark:border-white/[0.2] */}
-        <div className="mx-10 ">
-          <div className="flex flex-col gap-x-10 ">
+        <div>
+          <div className="flex flex-col gap-x-10 p-10">
             <span className="text-xl font-semibold text-[#0F0F12]">
               Pam Patacsil
             </span>
@@ -85,10 +85,9 @@ export const FloatingNav = ({
               key={`link=${idx}`}
               href={navItem.link}
               className={cn(
-                "relative  flex items-center "
+                "relative  flex items-center"
               )}
             >
-              <span className="block sm:hidden">{navItem.icon}</span>
               <span>
                 <p className="hidden sm:block mx-5 text-sm  text-[#0F0F12] font-openSans">
                   {navItem.name}
@@ -97,7 +96,7 @@ export const FloatingNav = ({
             </Link>
           ))}
         </div>
-        <div className="flex flex-row gap-5 ">
+        <div className={`md:flex flex-row hidden gap-5 px-10`}>
         {socialList.map((item, key) => (
           <a
             key={key}
@@ -108,7 +107,30 @@ export const FloatingNav = ({
             <p className=" text-sm font-openSans">{item.title}</p>
           </a>
         ))}
+        
       </div>
+      <div className="md:hidden block p-5" onClick={() => setOpen(!isOpen)}><Menu /></div>
+      {isOpen && (<div className="fixed md:hidden top-20 w-full bg-white border border-neutral-100 p-10 overflow-hidden animate-expand-height" style={{
+          backdropFilter: "blur(20px) saturate(240%)",
+          backgroundColor: "#f7f7f7",
+          borderRadius: "2px",
+          margin:"0 5px",
+          
+        }}
+      >  
+        <div className="flex flex-col space-y-5">
+          {socialList.map((item, key) => (
+              <a
+                key={key}
+                href="https://github.com/patacsilpam/nextjs-portfolio-website/blob/main/components/Footer.tsx"
+                className="cursor-pointer hover:bg-neutral-300"
+                target="_blank"
+              >
+                <p className="text-lg font-openSans">{item.title}</p>
+              </a>
+              ))}
+        </div>
+      </div>)}
       </motion.div>
     </AnimatePresence>
   );
