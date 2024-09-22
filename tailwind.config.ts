@@ -16,6 +16,7 @@ const config: Config = {
       },
       fontFamily: {
         openSans: ["Open Sans", "sans-serif"],
+        League_Spartan: [ "League Spartan", "sans-serif"]
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
