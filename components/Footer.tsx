@@ -9,8 +9,7 @@ const Footer = () => {
   return (
     <div className="p-10 flex md:flex-row flex-col-reverse md:justify-between justify-center items-center md:text-left text-center">
       <span className="flex flex-col">
-        <p>Built by Pam Patacsil</p>
-        <p>&copy; {currentYear}</p>
+        <p> 2022 &copy; Pam Patacsil . All Rights Reserved.</p>
       </span>
       <ul className="flex flex-row gap-5">
         {socialList.map((item, key) => (
